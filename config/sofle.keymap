@@ -86,10 +86,10 @@
 
         gme_layer {
 // ---------------------------------------------------------------------------------------------------
-// |  ^    |  1  |  2  |  3  |  4  |   5   |        /**/       |      6      | 7 | 8 | 9 | 0 | ` |
-// | ESC   |  X  |  V  |  L  |  C  |   W   |        /**/       |      K      | H | G | F | Q | ß |
-// | SHIFT |  U  |  I  |  A  |  E  |   O   |        /**/       |      S      | N | R | T | D | Y |
-// | CTRL  |  ,  |  .  |  -  |  P  |   Z   | MUTE | /**/ |     |      B      | M | , | . | J | - |
+// |  ^    |  1  |  2  |  3  |  4  |   5   |        /**/       |  6  | 7 | 8 | 9 | 0 | ` |
+// | ESC   |  X  |  V  |  L  |  C  |   W   |        /**/       |  K  | H | G | F | Q | ß |
+// | SHIFT |  U  |  I  |  A  |  E  |   O   |        /**/       |  S  | N | R | T | D | Y |
+// | CTRL  |  ,  |  .  |  -  |  P  |   Z   | MUTE | /**/ |     |  B  | M | , | . | J | - |
 //               |     |     | TAB | SPACE | NUM  | /**/ | SYM | ALT |   |   |   |
             bindings = <
 &kp CARET  &kp N1    &kp N2  &kp N3    &kp N4   &kp N5               /**/         &kp N6  &kp N7   &kp N8    &kp N9  &kp N0 &kp GRAVE
@@ -129,7 +129,7 @@
 &trans  &trans &trans &trans &trans &trans        /**/        &trans  &trans &trans &trans &trans &trans
 &trans  &kp K  &kp H  &kp G  &kp Q  &kp W         /**/        &trans  &trans &trans &trans &trans &trans
 &trans  &kp S  &kp N  &kp R  &kp D  &kp O         /**/        &trans  &trans &trans &trans &trans &trans
-&trans  &kp B  &kp M  &kp Y  &none  &kp J  &trans /**/ &trans &trans  &trans &trans &trans &trans &trans
+&trans  &kp B  &kp M  &kp Y  &none  &kp J  &trans /**/ &trans &trans  &trans &trans &trans &trans &tog neowin
                &none  &none  &trans &trans &trans /**/ &trans &trans  &trans &trans &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

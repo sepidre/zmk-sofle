@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: sepidre
-      url-base: https://github.com/sepidre
+      url-base: https://github.com/SepiDre
   projects:
     - name: zmk-german
       remote: sepidre

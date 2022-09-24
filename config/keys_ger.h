@@ -16,7 +16,7 @@
 /* Keyboard z and Z */
 #define DE_Z (HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))
 
-/* Keyboard " on 2 (Quote) */
+/* Keyboard " on 2 (Quote) */ 
 #define DE_DOUBLE_QUOTES (LS(HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_2_AND_AT)))
 
 /* Keyboard § on 3 (Paragraph) */

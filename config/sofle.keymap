@@ -41,6 +41,7 @@
 // | SHIFT/TAB |  U  |  I  |  A  |  E  |   O   |        /**/       |      S      | N | R | T | D | Y |
 // |    CTRL   |  Ü  |  Ö  |  Ä  |  P  |   Z   | MUTE | /**/ |     |      B      | M | , | . | J | - |
 //                   | GUI |     | ALT | SPACE | NUM  | /**/ | SYM | SHIFT/ENTER |   |   |   |
+            label = "Windows";
             bindings = <
 &kp DE_CARET   &kp N1    &kp N2    &kp N3    &kp N4   &kp N5               /**/         &kp N6         &kp N7 &kp N8    &kp N9  &kp N0 &kp DE_ACCENT
 &kp ESC        &kp X     &kp V     &kp L     &kp C    &kp W                /**/         &kp K          &kp H  &kp G     &kp F   &kp Q  &kp DE_SS
@@ -58,6 +59,7 @@
 // | TAB |  HOME   |  LEFT | DOWN | RIGHT |    END    |       /**/       |    4    |  5  |  6  |  +  |  |         |
 // | TRA |  REDO   |       |  INS |  RET  |    UNDO   | TRA | /**/ | TRA |    1    |  2  |  3  |  .  |  |         |
 //                 |  TRA  |  TRA |  TRA  |    TRA    | TRA | /**/ | TRA |   TRA   |  0  | ,   | TRA |
+            label = "Numblock";
             bindings = <
 &none   &none       &none    &none    &none     &none            /**/        &kp LS(TAB) &kp KP_MULTIPLY &kp KP_DIVIDE &none        &none &kp LNLCK 
 &trans  &kp PAGE_UP &kp BSPC &kp UP   &kp DEL   &kp PAGE_DOWN    /**/        &kp KP_N7   &kp KP_N8       &kp KP_N9     &kp KP_MINUS &none &none
@@ -75,6 +77,7 @@
 // | TRA | \  |  /  |  {  |  }  |  *  |       /**/       |  ?  |  (  |  )  |  -  |  :  |  §  |
 // | TRA | #  |  $  |  |  |  ~  |  `  | TRA | /**/ | TRA |  +  |  %  |  "  |  '  |  ;  | GME |
 //            | TRA | TRA | TRA | TRA | TRA | /**/ | TRA | TRA | TRA | TRA | TRA |
+            label = "Symbols";
             bindings = <
 &kp F1 &kp F2      &kp F3            &kp F4      &kp F5       &kp F6              /**/         &kp F7       &kp F8      &kp F9               &kp F10             &kp F11     &kp F12
 &trans &kp DE_AT   &kp DE_UNDERSCORE &kp DE_LBKT &kp DE_RBKT  &kp DE_CARET        /**/         &kp EXCL     &kp DE_LT   &kp DE_GT            &kp DE_EQUAL        &kp DE_AMPS &kp DE_EUR
@@ -92,6 +95,7 @@
 // | SHIFT |  U  |  I  |  A  |  E  |   O   |        /**/       |  S  | N | R | T | D | Y |
 // | CTRL  |  ,  |  .  |  -  |  P  |   Z   | MUTE | /**/ |     |  B  | M | , | . | J | - |
 //               |     |     | TAB | SPACE | NUM  | /**/ | SYM | ALT |   |   |   |
+            label = "Gaming";
             bindings = <
 &kp CARET  &kp N1    &kp N2  &kp N3    &kp N4   &kp N5               /**/         &kp N6  &kp N7   &kp N8    &kp N9  &kp N0 &kp GRAVE
 &kp ESC    &kp X     &kp V   &kp L     &kp C    &kp W                /**/         &kp K   &kp H    &kp G     &kp F   &kp Q  &none
@@ -109,6 +113,7 @@
 // |      |RGB_BRD|RGB_BRI|       |       |       |                |      |      |       |      |       |       |
 // |      |       |       |       |       |       |RGB_TOG| |EXTPWR|      |      |       |      |       |       |
 //                |       |       |       |       |       | |      |      |      |       |      |
+            label = "Adjust";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                                     &none &none &none &none &none &none
 &none      &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                                  &none &none &none &none &none &none
@@ -126,6 +131,7 @@
 // | SHIFT |  S  |  N  |  R  |  D  |  O  |       /**/       | TRA | TRA | TRA | TRA | TRA | TRA |
 // |  CTRL |  B  |  M  |  Y  |     |  J  | TRA | /**/ |     | TRA | TRA | TRA | TRA | TRA | NEO |
 //               |     |     | TRA | TRA | TRA | /**/ | TRA | TRA | TRA | TRA | TRA |
+            label = "Weapon";
             bindings = <
 &trans  &trans &trans &trans   &trans &trans        /**/        &trans  &trans &trans &trans &trans &trans
 &trans  &kp K  &kp H  &kp G    &kp Q  &kp DE_PIPE   /**/        &trans  &trans &trans &trans &trans &trans

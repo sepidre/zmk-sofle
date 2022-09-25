@@ -22,92 +22,92 @@
 #define WEA 5
 
 
-/* GERMAN START */
+/* GERMAN START * /
 
-/* Keyboard  € */
+/* Keyboard  € * /
 #define DE_EUR RA(E)
 
-/* Keyboard  @*/
+/* Keyboard  @* /
 #define DE_AT RA(Q)
 
-/* Keyboard y and Y */
+/* Keyboard y and Y * /
 #define DE_Y Z
 
-/* Keyboard z and Z */
+/* Keyboard z and Z * /
 #define DE_Z Y
 
-/* Keyboard " on 2 (Quote) */ 
+/* Keyboard " on 2 (Quote) * / 
 #define DE_DOUBLE_QUOTES LS(N2)
 
-/* Keyboard § on 3 (Paragraph) */
+/* Keyboard § on 3 (Paragraph) * /
 #define DE_PARA LS(N3)
 
-/* Keyboard & on 6 (Ampersand) */
+/* Keyboard & on 6 (Ampersand) * /
 #define DE_AMPS LS(N6)
 
-/* Keyboard / and { on 7 (Slash/Left Brace) */
+/* Keyboard / and { on 7 (Slash/Left Brace) * /
 #define DE_SLASH LS(N7)
 #define DE_LBRC RA(N7)
 
-/* Keyboard ( and [ on 8 (Left Parenthesis/Left Bracket) */
+/* Keyboard ( and [ on 8 (Left Parenthesis/Left Bracket) * /
 #define DE_LPAR LS(N8)
 #define DE_LBKT RA(N8)
 
-/* Keyboard ) and ] on 9 (Right Parenthesis/Right Bracket) */
+/* Keyboard ) and ] on 9 (Right Parenthesis/Right Bracket) * /
 #define DE_RPAR LS(N9)
 #define DE_RBKT RA(N9)
 
-/* Keyboard = and } on 0 (Equal/Right Brace) */
+/* Keyboard = and } on 0 (Equal/Right Brace) * /
 #define DE_EQUAL LS(N0)
 #define DE_RBRC RA(N0)
 
-/* Keyboard ß and ? and \ on - (ß/Questionmark/Backslash) */
+/* Keyboard ß and ? and \ on - (ß/Questionmark/Backslash) * /
 #define DE_SS MINUS
 #define DE_QMARK LS(MINUS)
 #define DE_BSLH RA(MINUS)
 
-/* Keyboard ´ and ` on = (Accent/Grave Accent)*/
+/* Keyboard ´ and ` on = (Accent/Grave Accent)* /
 #define DE_ACCENT EQUAL
 #define DE_GRAVE LS(EQUAL)
 
-/* Keyboard Ü on [ */
+/* Keyboard Ü on [ * /
 #define DE_UE BRACKET
 
-/* Keyboard + and * and ~ on ] (Plus/Star/Tilde) */
+/* Keyboard + and * and ~ on ] (Plus/Star/Tilde) * /
 #define DE_PLUS RIGHT_BRACKET
 #define DE_STAR LS(RIGHT_BRACKET)
 #define DE_TILDE RA(RIGHT_BRACKET)
 
-/* Keyboard < and > and | on \ (Less Than/Greater Than and Pipe) */
+/* Keyboard < and > and | on \ (Less Than/Greater Than and Pipe) * /
 #define DE_LT BACKSLASH
 #define DE_GT LS(BACKSLASH)
 #define DE_PIPE RA(BACKSLASH)
 
-/* Keyboard # and ' (Hash/SINGLE_QUOTE) */
+/* Keyboard # and ' (Hash/SINGLE_QUOTE) * /
 #define DE_HASH NON_US_HASH
 #define DE_SINGLE_QUOTE LS(NON_US_HASH)
 
-/* Keyboard Ö on ; */
+/* Keyboard Ö on ; * /
 #define DE_OE SEMICOLON
 
-/* Keyboard Ä on ' */
+/* Keyboard Ä on ' * /
 #define DE_AE APOSTROPHE
 
-/* Keyboard ^ and ° on ` (CARET/Grad) */
+/* Keyboard ^ and ° on ` (CARET/Grad) * /
 #define DE_CARET GRAVE
 #define DE_GRAD LS(GRAVE)
 
-/* Keyboard ; on ,(SEMICOLON) */
+/* Keyboard ; on ,(SEMICOLON) * /
 #define DE_SEMI LS(COMMA)
 
-/* Keyboard : on . (Colon) */
+/* Keyboard : on . (Colon) * /
 #define DE_COLON LS(PERIOD)
 
-/* Keyboard - and _ on / (Minus/Underscore) */
+/* Keyboard - and _ on / (Minus/Underscore) * /
 #define DE_MINUS SLASH
 #define DE_UNDERSCORE LS(SLASH)
 
-/* GERMAN STOP */
+GERMAN STOP */
 
 / {
 

@@ -36,8 +36,7 @@
 
 /* Keyboard " on 2 (Quote) */ 
 #define DE_DOUBLE_QUOTES LS(N2)
-
-/* Keyboard § on 3 (Paragraph) */
+/* Keyboard Paragraph on 3 (Paragraph) */
 #define DE_PARA LS(N3)
 
 /* Keyboard & on 6 (Ampersand) */

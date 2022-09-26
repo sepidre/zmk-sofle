@@ -170,7 +170,7 @@
 &kp F1 &kp F2      &kp F3            &kp F4      &kp F5       &kp F6              /**/         &kp F7       &kp F8      &kp F9               &kp F10             &kp F11     &kp F12
 &trans &kp DE_AT   &kp DE_UNDERSCORE &kp DE_LBKT &kp DE_RBKT  &kp DE_CARET        /**/         &kp EXCL     &kp DE_LT   &kp DE_GT            &kp DE_EQUAL        &kp DE_AMPS &kp DE_EUR
 &trans &kp DE_BSLH &kp DE_SLASH      &kp DE_LBRC &kp DE_RBRC  &kp DE_STAR         /**/         &kp DE_QMARK &kp DE_LPAR &kp DE_RPAR          &kp DE_MINUS        &kp COLON   &kp DE_PARA
-&trans &kp DE_HASH &kp DOLLAR        &kp DE_PIPE &kp DE_TILDE &kp DE_GRAVE &trans /**/ &trans  &kp DE_PLUS  &kp PERCENT &kp DE_DOUBLE_QUOTES &kp DE_SINGLE_QUOTE &kp SEMI    &tog GME
+&trans &kp DE_HASH &kp DOLLAR        &p DE_PIPE &kp DE_TILDE &kp DE_GRAVE &trans /**/ &trans  &kp DE_PLUS  &kp PERCENT &kp DE_DOUBLE_QUOTES &kp DE_SINGLE_QUOTE &kp SEMI    &tog GME
                    &trans            &trans      &trans       &trans       &trans /**/ &trans  &trans       &trans      &trans               &trans
             >;
 
@@ -205,11 +205,11 @@
 // |      |RGB_BRD|RGB_BRI|       |       |       |                |      |      |       |      |       |       |
 // |      |       |       |       |       |       |RGB_TOG| |EXTPWR|      |      |       |      |       |       |
 //                |       |       |       |       |       | |      |      |      |       |      |
-&bt BT_CLR &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                                     &out OUT_USB &out OUT_BLE &ext_power EP_ON &ext_power EP_OFF &none &none
-&none      &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                                  &none        &none        &none            &none             &none &none
-&none      &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                                            &none        &none        &none            &none             &none &none
+&bt BT_CLR &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                       &out OUT_USB &out OUT_BLE &ext_power EP_ON &ext_power EP_OFF &none &none
+&none      &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                    &none        &none        &none            &none             &none &none
+&none      &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                              &none        &none        &none            &none             &none &none
 &none      &none           &none           &none           &none           &none           &rgb_ug RGB_TOG  &ext_power EP_TOG &none        &none        &none            &none             &none &none
-                           &none           &none           &none           &none           &none            &none                           &none        &none        &none            &bootloader
+                           &none           &none           &none           &none           &none            &none             &none        &none        &none            &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

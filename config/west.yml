@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: infused-kim
-      revision: sofle
+      revision: my-changes/oled-ext-pwr
       import: app/west.yml
   self:
     path: config

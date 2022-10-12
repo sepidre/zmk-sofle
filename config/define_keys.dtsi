@@ -1,6 +1,7 @@
 
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
+#include <dt-bindings/zmk/rgb.h>
 
 
 /* GERMAN START */
@@ -91,3 +92,6 @@
 
 #define ______ &trans
 #define XXXXXX &none
+
+#define rgb_white &rgb_ug RGB_COLOR_HSB(0, 0, 10)
+#define rgb_purple &rgb_ug RGB_COLOR_HSB(285, 100, 10)

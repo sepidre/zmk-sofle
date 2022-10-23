@@ -9,6 +9,8 @@
             label = "rgb_NUM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &mo NUM>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(252, 100, 10)> // Blue
@@ -20,6 +22,8 @@
             label = "rgb_SYM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &mo SYM>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(55, 100, 10)> // Yellow
@@ -31,6 +35,8 @@
             label = "rgb_ADJ";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &mo NUM>
                 , <&macro_press &mo SYM>
@@ -44,6 +50,8 @@
             label = "rgb_WEA";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &mo WEA>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(128, 100, 10)> // Red
@@ -55,6 +63,8 @@
             label = "rgb_WIN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &tog GME>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(0, 0, 10)>; // White
@@ -63,6 +73,8 @@
             label = "rgb_GME";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_press &tog GME>
                 , <&macro_tap &rgb_ug RGB_COLOR_HSB(128, 100, 10)>;  // Purple

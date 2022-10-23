@@ -1,5 +1,5 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro - AS(Q) AS(W) AS(E) AS(R) AS(T) AS(Y) Autoshift applied for QWERTY keys
-#define HM(keycode, mods) &bhm mods AS(keycode) // HomeRow mods - HM(I, F5)
+//#define HM(keycode, mods) &bhm mods keycode // HomeRow mods - HM(I, F5)
 / {
     behaviors {
         as: auto_shift {

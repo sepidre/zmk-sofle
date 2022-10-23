@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "define_keys.dtsi"
 #include "macro.keymap"
-//#include "taps.keymap"
+#include "taps.keymap"
 
 #define WIN 0
 #define GME 1

@@ -6,7 +6,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
             #binding-cells = <2>;
-            tapping_term_ms = <135>;
+            tapping_term_ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            tapping-term-ms = <400>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;

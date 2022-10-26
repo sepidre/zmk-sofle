@@ -1,92 +1,150 @@
-
-/* GERMAN START */
-
-/* Keyboard  € */
-#define DE_EUR RA(E)
-
-/* Keyboard  @*/
-#define DE_AT RA(Q)
-
-/* Keyboard y and Y */
-#define DE_Y Z
-
-/* Keyboard z and Z */
-#define DE_Z Y
-
-/* Keyboard " on 2 (Quote) */ 
-#define DE_D_QUOTES LS(N2)
-/* Keyboard Paragraph on 3 (Paragraph) */
-#define DE_PARA LS(N3)
-
-/* Keyboard & on 6 (Ampersand) */
-#define DE_AMPS LS(N6)
-
-/* Keyboard / and { on 7 (Slash/Left Brace) */
-#define DE_SLASH LS(N7)
-#define DE_LBRC RA(N7)
-
-/* Keyboard ( and [ on 8 (Left Parenthesis/Left Bracket) */
-#define DE_LPAR LS(N8)
-#define DE_LBKT RA(N8)
-
-/* Keyboard ) and ] on 9 (Right Parenthesis/Right Bracket) */
-#define DE_RPAR LS(N9)
-#define DE_RBKT RA(N9)
-
-/* Keyboard = and } on 0 (Equal/Right Brace) */
-#define DE_EQUAL LS(N0)
-#define DE_RBRC RA(N0)
-
-/* Keyboard ß and ? and \ on - (ß/Questionmark/Backslash) */
-#define DE_SS MINUS
-#define DE_QMARK LS(MINUS)
-#define DE_BSLH RA(MINUS)
-
-/* Keyboard ´ and ` on = (Accent/Grave Accent)*/
-#define DE_ACCENT EQUAL
-#define DE_GRAVE LS(EQUAL)
-
-/* Keyboard Ü on [ */
-#define DE_UE LEFT_BRACKET
-
-/* Keyboard + and * and ~ on ] (Plus/Star/Tilde) */
-#define DE_PLUS RIGHT_BRACKET
-#define DE_STAR LS(RIGHT_BRACKET)
-#define DE_TILDE RA(RIGHT_BRACKET)
-
-/* Keyboard < and > and | on \ (Less Than/Greater Than and Pipe) */
-#define DE_LT BACKSLASH
-#define DE_GT LS(BACKSLASH)
-#define DE_PIPE RA(BACKSLASH)
-
-/* Keyboard # and ' (Hash/SINGLE_QUOTE) */
-#define DE_HASH NON_US_HASH
-#define DE_S_QUOTE LS(NON_US_HASH)
-
-/* Keyboard Ö on ; */
-#define DE_OE SEMICOLON
-
-/* Keyboard Ä on ' */
-#define DE_AE APOSTROPHE
-
-/* Keyboard ^ and ° on ` (CARET/Grad) */
-#define DE_CARET GRAVE
-#define DE_GRAD LS(GRAVE)
-
-/* Keyboard ; on ,(SEMICOLON) */
-#define DE_SEMI LS(COMMA)
-
-/* Keyboard : on . (Colon) */
-#define DE_COLON LS(PERIOD)
-
-/* Keyboard - and _ on / (Minus/Underscore) */
-#define DE_MINUS SLASH
-#define DE_UNDER LS(SLASH)
-
-/* GERMAN END */
-
 #define ______ &trans
 #define XXXXXX &none
 
 #define rgb_white &rgb_ug RGB_COLOR_HSB(0, 0, 10)
 #define rgb_purple &rgb_ug RGB_COLOR_HSB(285, 100, 10)
+
+/*
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │ ^ │ 1 │ 2 │ 3 │ 4 │ 5 │ 6 │ 7 │ 8 │ 9 │ 0 │ ß │ ´ │       │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │     │ Q │ W │ E │ R │ T │ Z │ U │ I │ O │ P │ Ü │ + │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
+ * │      │ A │ S │ D │ F │ G │ H │ J │ K │ L │ Ö │ Ä │ # │    │
+ * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
+ * │    │ < │ Y │ X │ C │ V │ B │ N │ M │ , │ . │ - │          │
+ * ├────┼───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │    │    │    │                        │    │    │    │    │
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
+// Row 1
+#define DE_CIRC GRAVE  // ^ (dead)
+#define DE_1    N1    // 1
+#define DE_2    N2    // 2
+#define DE_3    N3    // 3
+#define DE_4    N4    // 4
+#define DE_5    N5    // 5
+#define DE_6    N6    // 6
+#define DE_7    N7    // 7
+#define DE_8    N8    // 8
+#define DE_9    N9    // 9
+#define DE_0    N0    // 0
+#define DE_SS   MINUS // ß
+#define DE_ACUT EQUAL  // ´ (dead)
+// Row 2
+#define DE_Q    Q    // Q
+#define DE_W    W    // W
+#define DE_E    E    // E
+#define DE_R    R    // R
+#define DE_T    T    // T
+#define DE_Z    Y    // Z
+#define DE_U    U    // U
+#define DE_I    I    // I
+#define DE_O    O    // O
+#define DE_P    P    // P
+#define DE_UDIA LEFT_BRACKET // Ü
+#define DE_PLUS RIGHT_BRACKET // +
+// Row 3
+#define DE_A    A    // A
+#define DE_S    S    // S
+#define DE_D    D    // D
+#define DE_F    F    // F
+#define DE_G    G    // G
+#define DE_H    H    // H
+#define DE_J    J    // J
+#define DE_K    K    // K
+#define DE_L    L    // L
+#define DE_ODIA SEMI // Ö
+#define DE_ADIA APOS // Ä
+#define DE_HASH NON_US_HASH // #
+// Row 4
+#define DE_LABK NON_US_BSLH // <
+#define DE_Y    Z    // Y
+#define DE_X    X    // X
+#define DE_C    C    // C
+#define DE_V    V    // V
+#define DE_B    B    // B
+#define DE_N    N    // N
+#define DE_M    M    // M
+#define DE_COMM COMMA // ,
+#define DE_DOT  DOT  // .
+#define DE_MINS SLASH // -
+
+/* Shifted symbols
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │ ° │ ! │ " │ § │ $ │ % │ & │ / │ ( │ ) │ = │ ? │ ` │       │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │     │   │   │   │   │   │   │   │   │   │   │   │ * │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
+ * │      │   │   │   │   │   │   │   │   │   │   │   │ ' │    │
+ * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
+ * │    │ > │   │   │   │   │   │   │   │ ; │ : │ _ │          │
+ * ├────┼───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │    │    │    │                        │    │    │    │    │
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
+// Row 1
+#define DE_DEG  LS(DE_CIRC) // °
+#define DE_EXLM LS(N1)    // !
+#define DE_DQUO LS(N2)    // "
+#define DE_SECT LS(N3)    // §
+#define DE_DLR  LS(N4)    // $
+#define DE_PERC LS(N5)    // %
+#define DE_AMPR LS(N6)    // &
+#define DE_SLSH LS(N7)    // /
+#define DE_LPRN LS(N8)    // (
+#define DE_RPRN LS(N9)    // )
+#define DE_EQL  LS(N0)    // =
+#define DE_QUES LS(DE_SS)   // ?
+#define DE_GRV  LS(DE_ACUT) // ` (dead)
+// Row 2
+#define DE_ASTR LS(DE_PLUS) // *
+// Row 3
+#define DE_QUOT LS(DE_HASH) // '
+// Row 4
+#define DE_RABK LS(DE_LABK) // >
+#define DE_SCLN LS(DE_COMM) // ;
+#define DE_COLN LS(DE_DOT)  // :
+#define DE_UNDS LS(DE_MINS) // _
+
+/* AltGr symbols
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
+ * │   │   │ ² │ ³ │   │   │   │ { │ [ │ ] │ } │ \ │   │       │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤
+ * │     │ @ │   │ € │   │   │   │   │   │   │   │   │ ~ │     │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┐    │
+ * │      │   │   │   │   │   │   │   │   │   │   │   │   │    │
+ * ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┴────┤
+ * │    │ | │   │   │   │   │   │   │ µ │   │   │   │          │
+ * ├────┼───┴┬──┴─┬─┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤
+ * │    │    │    │                        │    │    │    │    │
+ * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
+ */
+// Row 1
+#define DE_SUP2 RA(N2)    // ²
+#define DE_SUP3 RA(N3)    // ³
+#define DE_LCBR RA(N7)    // {
+#define DE_LBRC RA(N8)    // [
+#define DE_RBRC RA(N9)    // ]
+#define DE_RCBR RA(N0)    // }
+#define DE_BSLS RA(DE_SS)   // (backslash)
+// Row 2
+#define DE_AT   RA(DE_Q)    // @
+#define DE_EURO RA(DE_E)    // €
+#define DE_TILD RA(DE_PLUS) // ~
+// Row 4
+#define DE_PIPE RA(DE_LABK) // |
+#define DE_MICR RA(DE_M)    // µ
+
+// DEPRECATED
+#define DE_UE   DE_UDIA
+#define DE_OE   DE_ODIA
+#define DE_AE   DE_ADIA
+#define DE_LESS DE_LABK
+#define DE_RING DE_DEG
+#define DE_DQOT DE_DQUO
+#define DE_PARA DE_SECT
+#define DE_QST  DE_QUES
+#define DE_MORE DE_RABK
+#define DE_SQ2  DE_SUP2
+#define DE_SQ3  DE_SUP3

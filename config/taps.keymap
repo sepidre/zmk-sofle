@@ -25,7 +25,7 @@
         };
         combo_AT {
             timeout-ms = <20>;
-	        key-positions = <25 26>;
+	        key-positions = <26 27>;
             bindings = <&kp DE_AT>;
         };
         combo_DQUO {
@@ -60,7 +60,7 @@
         };
         combo_BSLS {
             timeout-ms = <20>;
-	        key-positions = <47 48>;
+	        key-positions = <46 47>;
             bindings = <&kp DE_BSLS>;
         };
         combo_TABL {

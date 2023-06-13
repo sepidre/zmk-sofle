@@ -2,22 +2,22 @@
 //#define HM(keycode, mods) &bhm mods keycode // HomeRow mods - HM(I, F5)
 / {
     behaviors {
-        as: auto_shift {
+        hm_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_SHIFT";
+            label = "HOMEROW_MODS_L";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        bhm: balanced_homerow_mods {
+        hm_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "HOMEROW_MODS_R";
             #binding-cells = <2>;
-            tapping-term-ms = <400>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
         lh_pht: left_hand_positional_hold_tap {

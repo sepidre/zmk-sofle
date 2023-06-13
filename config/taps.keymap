@@ -51,7 +51,7 @@
         combo_CIRC {
             timeout-ms = <20>;
 	        key-positions = <28 29>;
-            bindings = <&kp NUBS>;
+            bindings = <&kp NON_US_BSLH>;
         };
         combo_SLSH {
             timeout-ms = <20>;

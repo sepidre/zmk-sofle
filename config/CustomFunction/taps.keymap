@@ -42,9 +42,9 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         }; 
-        TAP_DANCE(brc, &kp DE_LBRC, &kp DE_RBRC, &kp LEFT)
-        TAP_DANCE(cbr, &kp DE_LCBR, &kp DE_RCBR, &kp LEFT)
-        TAP_DANCE(prn, &kp DE_LPRN, &kp DE_RPRN, &kp LEFT)
-        TAP_DANCE(abk, &kp DE_CIRC, &kp DE_DEG, &kp LEFT)
+        TAP_DANCE(brc, &kp DE_LBRC, &kp DE_RBRC)
+        TAP_DANCE(cbr, &kp DE_LCBR, &kp DE_RCBR)
+        TAP_DANCE(prn, &kp DE_LPRN, &kp DE_RPRN)
+        TAP_DANCE(abk, &kp DE_CIRC, &kp DE_DEG)
     };
 };

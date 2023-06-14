@@ -1,0 +1,49 @@
+// Autoshift Macro - AS(Q) AS(W) AS(E) AS(R) AS(T) AS(Y) Autoshift applied for QWERTY keys
+//#define HM(keycode, mods) &bhm mods keycode // HomeRow mods - HM(I, F5)
+/ {
+    combos {
+        compatible = "zmk,combos";
+        //COMBO(esckey, &kp ESC, 2 3) 
+        //    name    output         pos.
+        COMBO(BRC,    &td_BRC,          15 16)
+        COMBO(CBR,    &td_CBR,          39 40)
+        COMBO(PRN,    &td_PRN,          45 46)
+        COMBO(ABK,    &td_ABK,          19 20)
+        COMBO(AT,     &kp DE_AT,        26 27)
+        COMBO(DQUO,   &kp DE_DQUO,      14 15)
+        COMBO(QUO,    &kp DE_QUOT,      20 21)
+        COMBO(UNDER,  &kp DE_UNDS,      16 17)
+        COMBO(MINUS,  &kp DE_MINS,      18 19)
+        COMBO(CIRC,   &kp NON_US_BSLH,  28 29)
+        COMBO(SLSH,   &kp DE_SLSH,      38 39)
+        COMBO(BSLS,   &kp DE_BSLS,      46 47)
+        COMBO(TABL,   &kp TAB,          27 28)
+        COMBO(TABL,   &kp TAB,          31 32)
+        COMBO(HASH,   &kp DE_HASH,      33 34)
+    };
+
+    behaviors {
+        hm_l: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_L";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        hm_r: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_R";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        }; 
+        TAP_DANCE(BRC, &kp DE_LBRC, &kp DE_RBRC, &kp LEFT)
+        TAP_DANCE(CBR, &kp DE_LCBR, &kp DE_RCBR, &kp LEFT)
+        TAP_DANCE(PRN, &kp DE_LPRN, &kp DE_RPRN, &kp LEFT)
+        TAP_DANCE(ABK, &kp DE_CIRC, &kp DE_DEG, &kp LEFT)
+    };
+};

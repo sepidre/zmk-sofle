@@ -1,7 +1,9 @@
 {
     "files.associations": {
+      "*.log-viewer": "lnlog",
+      "*.dtsi": "c",
       "*.lnlog": "log",
       "*.keymap": "c",
-      "*.dtsi": "c"
+      "__node_handle": "c"
     }
 }

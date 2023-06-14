@@ -11,9 +11,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include "define_keys.dtsi"
-#include "macro.keymap"
-#include "taps.keymap"
+#include "CustomFunction/define_keys.dtsi"
+#include "CustomFunction/macro.keymap"
+#include "CustomFunction/taps.keymap"
+#include "CustomFunction/util.h"
 
 #define NEO 0
 #define APT 1

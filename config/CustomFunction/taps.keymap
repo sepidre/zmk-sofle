@@ -20,7 +20,7 @@
         COMBO(bsls,     &kp DE_BSLS,      46 47)
         COMBO(tabl,     &kp TAB,          27 28)
         COMBO(tabr,     &kp TAB,          31 32)
-        COMBO(hash,     &kp DE_HASH,      33 34)
+        COMBO(hash,     &kp DE_HASH,      32 33)
     };
 
     behaviors {

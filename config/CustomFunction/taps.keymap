@@ -1,10 +1,10 @@
-// Autoshift Macro - AS(Q) AS(W) AS(E) AS(R) AS(T) AS(Y) Autoshift applied for QWERTY keys
+//Autoshift Macro - AS(Q) AS(W) AS(E) AS(R) AS(T) AS(Y) Autoshift applied for QWERTY keys
 //#define HM(keycode, mods) &bhm mods keycode // HomeRow mods - HM(I, F5)
 / {
-    combos {
+     combos {
         compatible = "zmk,combos";
         //COMBO(esckey, &kp ESC, 2 3) 
-        //    name    output         pos.
+        //    name    output            pos.
         COMBO(BRC,    &td_BRC,          15 16)
         COMBO(CBR,    &td_CBR,          39 40)
         COMBO(PRN,    &td_PRN,          45 46)
